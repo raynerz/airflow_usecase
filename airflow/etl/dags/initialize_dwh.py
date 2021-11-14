@@ -19,7 +19,6 @@ from airflow.operators.python_operator import PythonOperator
 from airflow import models
 from airflow.settings import Session
 import logging
-import json
 
 
 args = {
@@ -29,8 +28,8 @@ args = {
 }
 
 
-def init_hive_example():
-    logging.info('Creating connections, pool and sql path')
+def initialize_dwh():
+    logging.info('Creating connections and definining sql path')
 
     session = Session()
 
@@ -42,53 +41,35 @@ def init_hive_example():
         new_conn.port = attributes.get('port')
         new_conn.schema = attributes.get('schema')
         new_conn.login = attributes.get('login')
-        new_conn.set_extra(attributes.get('extra'))
         new_conn.set_password(attributes.get('password'))
 
         session.add(new_conn)
         session.commit()
 
     create_new_conn(session,
-                    {"conn_id": "postgres_oltp",
+                    {"conn_id": "postgres_dwh",
                      "conn_type": "postgres",
                      "host": "postgres",
                      "port": 5432,
-                     "schema": "orders",
-                     "login": "oltp_read",
-                     "password": "oltp_read"})
-
-    create_new_conn(session,
-                    {"conn_id": "hive_staging",
-                     "conn_type": "hive_cli",
-                     "host": "hive",
-                     "schema": "default",
-                     "port": 10000,
-                     "login": "cloudera",
-                     "password": "cloudera",
-                     "extra": json.dumps(
-                        {"hive_cli_params": "",
-                         "auth": "none",
-                         "use_beeline": "true"})})
+                     "schema": "dwh",
+                     "login": "dwh_svc_account",
+                     "password": "dwh_svc_account"})
 
     new_var = models.Variable()
     new_var.key = "sql_path"
     new_var.set_val("/usr/local/airflow/sql")
-    session.add(new_var)
-    new_var = models.Variable()
-    new_var.key = "hive_sql_path"
-    new_var.set_val("/usr/local/airflow/hql")
     session.add(new_var)
     session.commit()
 
     session.close()
 
 dag = airflow.DAG(
-    'init_hive_example',
+    'init_dwh',
     schedule_interval="@once",
     default_args=args,
     max_active_runs=1)
 
-t1 = PythonOperator(task_id='init_hive_example',
-                    python_callable=init_hive_example,
+t1 = PythonOperator(task_id='initialize_dwh',
+                    python_callable=initialize_dwh,
                     provide_context=False,
                     dag=dag)

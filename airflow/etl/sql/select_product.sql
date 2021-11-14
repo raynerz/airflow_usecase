@@ -3,6 +3,8 @@ SELECT
       , product_name
       , supplier_id
       , producttype_id
+      , %(audit_id)s
+      , %(window_start_date)s
 FROM
       product
 WHERE
