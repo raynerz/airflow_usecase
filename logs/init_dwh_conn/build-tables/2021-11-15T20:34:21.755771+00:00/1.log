@@ -1,0 +1,74 @@
+[2021-11-15 20:34:23,404] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: init_dwh_conn.build-tables manual__2021-11-15T20:34:21.755771+00:00 [queued]>
+[2021-11-15 20:34:23,426] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: init_dwh_conn.build-tables manual__2021-11-15T20:34:21.755771+00:00 [queued]>
+[2021-11-15 20:34:23,427] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 20:34:23,427] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-11-15 20:34:23,427] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 20:34:23,464] {taskinstance.py:1262} INFO - Executing <Task(PostgresOperator): build-tables> on 2021-11-15 20:34:21.755771+00:00
+[2021-11-15 20:34:23,467] {standard_task_runner.py:52} INFO - Started process 2101 to run task
+[2021-11-15 20:34:23,470] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'init_dwh_conn', 'build-tables', 'manual__2021-11-15T20:34:21.755771+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/initialize_dwh.py', '--cfg-path', '/tmp/tmpwzyz2tvy', '--error-file', '/tmp/tmpgyeo3y0j']
+[2021-11-15 20:34:23,471] {standard_task_runner.py:77} INFO - Job 86: Subtask build-tables
+[2021-11-15 20:34:23,512] {logging_mixin.py:109} INFO - Running <TaskInstance: init_dwh_conn.build-tables manual__2021-11-15T20:34:21.755771+00:00 [running]> on host e693d79b64a2
+[2021-11-15 20:34:23,562] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=init_dwh_conn
+AIRFLOW_CTX_TASK_ID=build-tables
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-15T20:34:21.755771+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-11-15T20:34:21.755771+00:00
+[2021-11-15 20:34:23,570] {base.py:79} INFO - Using connection to: id: postgres_dwh. Host: postgres-dwh, Port: 5432, Schema: None, Login: ***, Password: ***, extra: {}
+[2021-11-15 20:34:23,573] {dbapi.py:225} INFO - Running statement: DROP TABLE IF EXISTS fact_covid;
+DROP TABLE IF EXISTS dim_test;
+DROP TABLE IF EXISTS dim_deaths;
+DROP TABLE IF EXISTS dim_municipality;
+DROP TABLE IF EXISTS dim_canton;
+DROP TABLE IF EXISTS dim_infections;
+DROP TABLE IF EXISTS dim_date;
+
+CREATE TABLE dim_test (
+  test_key    SERIAL PRIMARY KEY,
+  positive    INTEGER,
+  negative    INTEGER,
+  total       INTEGER,
+  positivity_rate INTEGER,
+  source          TEXT,
+  created_date VARCHAR(50)
+);
+
+CREATE TABLE dim_deaths (
+  deaths_key SERIAL PRIMARY KEY,
+  amount INTEGER,
+  canton VARCHAR(50),
+  created_date VARCHAR(50)
+);
+
+CREATE TABLE dim_infections (
+  infection_key SERIAL PRIMARY KEY,
+  confirmed REAL,
+  canton VARCHAR(50),
+  created_date VARCHAR(50)
+);
+
+
+CREATE TABLE fact_covid (
+    covid_key     SERIAL PRIMARY KEY,
+    dim_test      INTEGER,
+    dim_deaths    INTEGER,
+    dim_infections INTEGER,
+    created_date TIMESTAMP NOT NULL DEFAULT current_timestamp,
+
+    CONSTRAINT fk_test
+      FOREIGN KEY(dim_test)
+	  REFERENCES dim_test(test_key),
+
+    CONSTRAINT fk_deaths
+      FOREIGN KEY(dim_deaths)
+    REFERENCES dim_deaths(deaths_key),
+
+    CONSTRAINT fk_infections
+      FOREIGN KEY(dim_infections)
+	  REFERENCES dim_infections(infection_key)
+);, parameters: None
+[2021-11-15 20:34:23,613] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=init_dwh_conn, task_id=build-tables, execution_date=20211115T203421, start_date=20211115T203423, end_date=20211115T203423
+[2021-11-15 20:34:23,642] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-11-15 20:34:23,672] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

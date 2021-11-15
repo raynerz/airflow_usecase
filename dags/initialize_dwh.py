@@ -47,12 +47,6 @@ def initialize_dwh_conn():
         session.commit()
 
     create_new_conn(session)
-
-
-    new_var = models.Variable()
-    new_var.key = "sql_path"
-    new_var.set_val("/usr/local/airflow/sql")
-    session.add(new_var)
     session.commit()
 
     session.close()

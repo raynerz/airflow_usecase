@@ -1,0 +1,40 @@
+[2021-11-15 11:22:01,952] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: covid_ingestion.process_BE manual__2021-11-15T11:21:58.888400+00:00 [queued]>
+[2021-11-15 11:22:01,964] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: covid_ingestion.process_BE manual__2021-11-15T11:21:58.888400+00:00 [queued]>
+[2021-11-15 11:22:01,964] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 11:22:01,964] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-11-15 11:22:01,964] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 11:22:01,981] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): process_BE> on 2021-11-15 11:21:58.888400+00:00
+[2021-11-15 11:22:01,985] {standard_task_runner.py:52} INFO - Started process 6243 to run task
+[2021-11-15 11:22:01,988] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'covid_ingestion', 'process_BE', 'manual__2021-11-15T11:21:58.888400+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/covid_ingestion.py', '--cfg-path', '/tmp/tmp8xpckonr', '--error-file', '/tmp/tmpxfl46nex']
+[2021-11-15 11:22:01,989] {standard_task_runner.py:77} INFO - Job 136: Subtask process_BE
+[2021-11-15 11:22:02,026] {logging_mixin.py:109} INFO - Running <TaskInstance: covid_ingestion.process_BE manual__2021-11-15T11:21:58.888400+00:00 [running]> on host 6f9154c92b39
+[2021-11-15 11:22:02,072] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=covid_ingestion
+AIRFLOW_CTX_TASK_ID=process_BE
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-15T11:21:58.888400+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-11-15T11:21:58.888400+00:00
+[2021-11-15 11:22:02,112] {logging_mixin.py:109} INFO -            date time  ... ncumul_deceased                                source
+624  2021-11-15  NaN  ...          1186.0  https://covid-kennzahlen.apps.be.ch/
+
+[1 rows x 11 columns]
+[2021-11-15 11:22:02,114] {warnings.py:110} WARNING - /opt/***/dags/covid_ingestion.py:89: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  cases_today['infections'] = cases_today['ncumul_conf'] - cases_yesterday['ncumul_conf']
+
+[2021-11-15 11:22:02,115] {warnings.py:110} WARNING - /opt/***/dags/covid_ingestion.py:90: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  cases_today['deaths'] = cases_today['ncumul_deceased'] - cases_yesterday['ncumul_deceased']
+
+[2021-11-15 11:22:02,117] {python.py:152} INFO - Done. Returned value was: {'deaths_amount': {624: 0.0}, 'municipality_postal_code': '', 'place': '', 'canton': 'BE', 'infections': {624: 0.0}, 'test_positive': {591: 485}, 'test_negative': {591: nan}, 'positivity_rate': {591: 8.76}}
+[2021-11-15 11:22:02,137] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=covid_ingestion, task_id=process_BE, execution_date=20211115T112158, start_date=20211115T112201, end_date=20211115T112202
+[2021-11-15 11:22:02,160] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-11-15 11:22:02,189] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

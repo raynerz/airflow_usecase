@@ -349,3 +349,130 @@ CREATE TABLE fact_covid (
 [2021-11-15 08:41:56,460] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=init_dwh_conn, task_id=build-tables, execution_date=20211108T000000, start_date=20211115T084156, end_date=20211115T084156
 [2021-11-15 08:41:56,505] {local_task_job.py:154} INFO - Task exited with return code 0
 [2021-11-15 08:41:56,539] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-11-15 19:45:01,858] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: init_dwh_conn.build-tables scheduled__2021-11-08T00:00:00+00:00 [queued]>
+[2021-11-15 19:45:01,872] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: init_dwh_conn.build-tables scheduled__2021-11-08T00:00:00+00:00 [queued]>
+[2021-11-15 19:45:01,872] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 19:45:01,872] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-11-15 19:45:01,872] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 19:45:01,886] {taskinstance.py:1262} INFO - Executing <Task(PostgresOperator): build-tables> on 2021-11-08 00:00:00+00:00
+[2021-11-15 19:45:01,890] {standard_task_runner.py:52} INFO - Started process 84 to run task
+[2021-11-15 19:45:01,892] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'init_dwh_conn', 'build-tables', 'scheduled__2021-11-08T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/initialize_dwh.py', '--cfg-path', '/tmp/tmpb160s375', '--error-file', '/tmp/tmpk9zx1pxq']
+[2021-11-15 19:45:01,893] {standard_task_runner.py:77} INFO - Job 4: Subtask build-tables
+[2021-11-15 19:45:01,925] {logging_mixin.py:109} INFO - Running <TaskInstance: init_dwh_conn.build-tables scheduled__2021-11-08T00:00:00+00:00 [running]> on host e693d79b64a2
+[2021-11-15 19:45:01,973] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=init_dwh_conn
+AIRFLOW_CTX_TASK_ID=build-tables
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-08T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-08T00:00:00+00:00
+[2021-11-15 19:45:01,981] {base.py:79} INFO - Using connection to: id: postgres_dwh. Host: postgres-dwh, Port: 5432, Schema: None, Login: ***, Password: ***, extra: {}
+[2021-11-15 19:45:01,985] {dbapi.py:225} INFO - Running statement: DROP TABLE IF EXISTS fact_covid;
+DROP TABLE IF EXISTS dim_test;
+DROP TABLE IF EXISTS dim_deaths;
+DROP TABLE IF EXISTS dim_municipality;
+DROP TABLE IF EXISTS dim_canton;
+DROP TABLE IF EXISTS dim_infections;
+DROP TABLE IF EXISTS dim_date;
+
+CREATE TABLE dim_test (
+  test_key    SERIAL PRIMARY KEY,
+  positive    INTEGER,
+  negative    INTEGER,
+  total       INTEGER,
+  positivity_rate INTEGER,
+  source          TEXT,
+  created_date TIMESTAMP NOT NULL DEFAULT current_timestamp
+);
+
+CREATE TABLE dim_deaths (
+  deaths_key SERIAL PRIMARY KEY,
+  amount INTEGER,
+  canton INTEGER,
+  created_date TIMESTAMP NOT NULL DEFAULT current_timestamp
+);
+
+CREATE TABLE dim_municipality(
+  postal_code_key INTEGER PRIMARY KEY,
+  place VARCHAR(50),
+  created_date TIMESTAMP NOT NULL DEFAULT current_timestamp
+);
+
+CREATE TABLE dim_canton(
+  canton_key SERIAL PRIMARY KEY,
+  canton_name VARCHAR(50),
+  created_date TIMESTAMP NOT NULL DEFAULT current_timestamp
+);
+
+CREATE TABLE dim_infections (
+  infection_key SERIAL PRIMARY KEY,
+  confirmed INTEGER,
+  postal_code INTEGER,
+  canton INTEGER,
+  created_date TIMESTAMP NOT NULL DEFAULT current_timestamp
+);
+
+CREATE TABLE dim_date (
+  date_key SERIAL PRIMARY KEY,
+  day INTEGER,
+  month INTEGER,
+  year INTEGER,
+  hour INTEGER,
+  minute INTEGER,
+  second INTEGER,
+  created_date TIMESTAMP NOT NULL DEFAULT current_timestamp
+);
+
+CREATE TABLE fact_covid (
+    covid_key     SERIAL PRIMARY KEY,
+    dim_test      INTEGER,
+    dim_deaths    INTEGER,
+    dim_municipality  INTEGER,
+    dim_canton    INTEGER,
+    dim_infections INTEGER,
+    dim_date      INTEGER,
+    created_date TIMESTAMP NOT NULL DEFAULT current_timestamp,
+
+    CONSTRAINT fk_test
+      FOREIGN KEY(dim_test)
+	  REFERENCES dim_test(test_key),
+
+    CONSTRAINT fk_deaths
+      FOREIGN KEY(dim_deaths)
+    REFERENCES dim_deaths(deaths_key),
+
+    CONSTRAINT fk_municipality
+      FOREIGN KEY(dim_municipality)
+	  REFERENCES dim_municipality(postal_code_key),
+
+    CONSTRAINT fk_canton
+      FOREIGN KEY(dim_canton)
+	  REFERENCES dim_canton(canton_key),
+
+    CONSTRAINT fk_infections
+      FOREIGN KEY(dim_infections)
+	  REFERENCES dim_infections(infection_key),
+
+    CONSTRAINT fk_date
+      FOREIGN KEY(dim_date)
+    REFERENCES dim_date(date_key)
+
+);, parameters: None
+[2021-11-15 19:45:02,023] {postgres.py:71} INFO - NOTICE:  table "fact_covid" does not exist, skipping
+
+[2021-11-15 19:45:02,023] {postgres.py:71} INFO - NOTICE:  table "dim_test" does not exist, skipping
+
+[2021-11-15 19:45:02,023] {postgres.py:71} INFO - NOTICE:  table "dim_deaths" does not exist, skipping
+
+[2021-11-15 19:45:02,023] {postgres.py:71} INFO - NOTICE:  table "dim_municipality" does not exist, skipping
+
+[2021-11-15 19:45:02,023] {postgres.py:71} INFO - NOTICE:  table "dim_canton" does not exist, skipping
+
+[2021-11-15 19:45:02,023] {postgres.py:71} INFO - NOTICE:  table "dim_infections" does not exist, skipping
+
+[2021-11-15 19:45:02,023] {postgres.py:71} INFO - NOTICE:  table "dim_date" does not exist, skipping
+
+[2021-11-15 19:45:02,034] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=init_dwh_conn, task_id=build-tables, execution_date=20211108T000000, start_date=20211115T194501, end_date=20211115T194502
+[2021-11-15 19:45:02,064] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-11-15 19:45:02,093] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,32 @@
+[2021-11-15 09:05:50,663] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: covid_ingestion.ingest_to_dwh manual__2021-11-15T09:05:49.767367+00:00 [queued]>
+[2021-11-15 09:05:50,685] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: covid_ingestion.ingest_to_dwh manual__2021-11-15T09:05:49.767367+00:00 [queued]>
+[2021-11-15 09:05:50,685] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 09:05:50,686] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-11-15 09:05:50,686] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 09:05:50,702] {taskinstance.py:1262} INFO - Executing <Task(PostgresOperator): ingest_to_dwh> on 2021-11-15 09:05:49.767367+00:00
+[2021-11-15 09:05:50,708] {standard_task_runner.py:52} INFO - Started process 1009 to run task
+[2021-11-15 09:05:50,713] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'covid_ingestion', 'ingest_to_dwh', 'manual__2021-11-15T09:05:49.767367+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/covid_ingestion.py', '--cfg-path', '/tmp/tmpz4elievc', '--error-file', '/tmp/tmpeote1afv']
+[2021-11-15 09:05:50,714] {standard_task_runner.py:77} INFO - Job 26: Subtask ingest_to_dwh
+[2021-11-15 09:05:50,773] {logging_mixin.py:109} INFO - Running <TaskInstance: covid_ingestion.ingest_to_dwh manual__2021-11-15T09:05:49.767367+00:00 [running]> on host 6f9154c92b39
+[2021-11-15 09:05:50,837] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=covid_ingestion
+AIRFLOW_CTX_TASK_ID=ingest_to_dwh
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-15T09:05:49.767367+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-11-15T09:05:49.767367+00:00
+[2021-11-15 09:05:50,847] {base.py:79} INFO - Using connection to: id: postgres_dwh. Host: postgres-dwh, Port: 5432, Schema: None, Login: ***, Password: ***, extra: {}
+[2021-11-15 09:05:50,851] {dbapi.py:225} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS pet (
+            pet_id SERIAL PRIMARY KEY,
+            name VARCHAR NOT NULL,
+            pet_type VARCHAR NOT NULL,
+            birth_date DATE NOT NULL,
+            OWNER VARCHAR NOT NULL);
+          , parameters: None
+[2021-11-15 09:05:50,852] {postgres.py:71} INFO - NOTICE:  relation "pet" already exists, skipping
+
+[2021-11-15 09:05:50,866] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=covid_ingestion, task_id=ingest_to_dwh, execution_date=20211115T090549, start_date=20211115T090550, end_date=20211115T090550
+[2021-11-15 09:05:50,924] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-11-15 09:05:50,955] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

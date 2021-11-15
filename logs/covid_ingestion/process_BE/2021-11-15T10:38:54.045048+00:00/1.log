@@ -1,0 +1,48 @@
+[2021-11-15 10:38:57,799] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: covid_ingestion.process_BE manual__2021-11-15T10:38:54.045048+00:00 [queued]>
+[2021-11-15 10:38:57,811] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: covid_ingestion.process_BE manual__2021-11-15T10:38:54.045048+00:00 [queued]>
+[2021-11-15 10:38:57,812] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 10:38:57,812] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-11-15 10:38:57,812] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-15 10:38:57,828] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): process_BE> on 2021-11-15 10:38:54.045048+00:00
+[2021-11-15 10:38:57,833] {standard_task_runner.py:52} INFO - Started process 4563 to run task
+[2021-11-15 10:38:57,836] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'covid_ingestion', 'process_BE', 'manual__2021-11-15T10:38:54.045048+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/covid_ingestion.py', '--cfg-path', '/tmp/tmp7i0249_e', '--error-file', '/tmp/tmpoap9eh1c']
+[2021-11-15 10:38:57,837] {standard_task_runner.py:77} INFO - Job 91: Subtask process_BE
+[2021-11-15 10:38:57,878] {logging_mixin.py:109} INFO - Running <TaskInstance: covid_ingestion.process_BE manual__2021-11-15T10:38:54.045048+00:00 [running]> on host 6f9154c92b39
+[2021-11-15 10:38:57,929] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=covid_ingestion
+AIRFLOW_CTX_TASK_ID=process_BE
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-15T10:38:54.045048+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-11-15T10:38:54.045048+00:00
+[2021-11-15 10:38:57,990] {logging_mixin.py:109} INFO -            date  ...                                             source
+0    2020-02-27  ...               https://covid-kennzahlen.apps.be.ch/
+1    2020-02-28  ...  https://www.be.ch/portal/de/index/mediencenter...
+2    2020-02-29  ...               https://covid-kennzahlen.apps.be.ch/
+3    2020-03-01  ...  https://www.be.ch/portal/de/index/mediencenter...
+4    2020-03-02  ...               https://covid-kennzahlen.apps.be.ch/
+..          ...  ...                                                ...
+618  2021-11-09  ...               https://covid-kennzahlen.apps.be.ch/
+619  2021-11-10  ...               https://covid-kennzahlen.apps.be.ch/
+620  2021-11-11  ...               https://covid-kennzahlen.apps.be.ch/
+621  2021-11-12  ...               https://covid-kennzahlen.apps.be.ch/
+622  2021-11-13  ...               https://covid-kennzahlen.apps.be.ch/
+
+[623 rows x 11 columns]
+[2021-11-15 10:38:57,995] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/pandas/core/series.py:1056: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  cacher_needs_updating = self._check_is_chained_assignment_possible()
+
+[2021-11-15 10:38:57,998] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/pandas/core/indexing.py:1724: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._setitem_with_indexer_missing(indexer, value)
+
+[2021-11-15 10:38:57,999] {python.py:152} INFO - Done. Returned value was: None
+[2021-11-15 10:38:58,010] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=covid_ingestion, task_id=process_BE, execution_date=20211115T103854, start_date=20211115T103857, end_date=20211115T103858
+[2021-11-15 10:38:58,048] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-11-15 10:38:58,078] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
