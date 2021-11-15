@@ -19,8 +19,17 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.operators.postgres_operator import PostgresOperator
 import pandas as pd
 import requests
-import json
 from io import StringIO
+
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("simplejson")
+
+import simplejson as json
 
 #Adresses where the data is stored
 covid_cases_BE = "https://raw.githubusercontent.com/openZH/covid_19/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_BE_total.csv"
@@ -106,18 +115,46 @@ def process_BE_cases(ti):
     return export
 
 def process_BE_tests(ti):
-    pass
+    data = ti.xcom_pull(task_ids="collect_data", key="return_value")
 
+    bern_data = data["BE"]
 
+    #Converting to StringIO so it can be read by pandas as dataframe
+    str_tests = StringIO(bern_data["tests"])
+    csv_tests = pd.read_csv(str_tests, header=0)
 
+    #Sorting the dataframe
 
+    csv_tests = csv_tests.sort_values(by=['start_date'], ascending=False)
 
-def process_ZH():
-    pass
+    # Locating last day tests
+    today_tests = csv_tests.iloc[0]
+    today_tests = today_tests.to_dict()
+    # Preparing data to ingest the data warehouse
 
-def process_VD():
-    pass
+    export = {
+    "canton" : "BE",
+    "date": today_tests['start_date'],
+    "positive" : int(today_tests['positive_tests']),
+    "negative" : today_tests['negative_tests'],
+    "total" : int(today_tests['total_tests']),
+    "positivity_rate" : float(today_tests['positivity_rate']),
+    "source" : today_tests['source']
+    }
 
+    # Converting NaN values to null so they can be serialized by airflow libraries
+    export = json.dumps(export, ignore_nan=True)
+    export = json.loads(export)
+
+    ti.xcom_push(key="canton", value = export['canton'])
+    ti.xcom_push(key='date', value = export['date'])
+    ti.xcom_push(key='positive', value = export['positive'])
+    ti.xcom_push(key='negative', value = export['negative'])
+    ti.xcom_push(key='total', value = export['total'])
+    ti.xcom_push(key='positivity_rate', value = export['positivity_rate'])
+    ti.xcom_push(key='source', value = export['source'])
+
+    return export
 
 ##########Building DAG
 
@@ -138,6 +175,11 @@ t2_1 = PythonOperator(task_id='process_BE_cases',
                     provide_context=True,
                     dag=dag)
 
+t2_2 = PythonOperator(task_id='process_BE_tests',
+                    python_callable=process_BE_tests,
+                    provide_context=True,
+                    dag=dag)
+
 
 t3 = PostgresOperator(
         task_id="ingest_to_dwh",
@@ -147,7 +189,8 @@ t3 = PostgresOperator(
     )
 
 
-t1 >> t2_1 >> t3
+t1 >> [t2_1, t2_2] >> t3
+
 
 if __name__ == "__main__":
     dag.cli()

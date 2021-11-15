@@ -1,17 +1,14 @@
 DROP TABLE IF EXISTS fact_covid;
 DROP TABLE IF EXISTS dim_test;
 DROP TABLE IF EXISTS dim_deaths;
-DROP TABLE IF EXISTS dim_municipality;
-DROP TABLE IF EXISTS dim_canton;
 DROP TABLE IF EXISTS dim_infections;
-DROP TABLE IF EXISTS dim_date;
 
 CREATE TABLE dim_test (
   test_key    SERIAL PRIMARY KEY,
   positive    INTEGER,
-  negative    INTEGER,
+  negative    VARCHAR(50),
   total       INTEGER,
-  positivity_rate INTEGER,
+  positivity_rate FLOAT,
   source          TEXT,
   created_date VARCHAR(50)
 );
@@ -25,7 +22,7 @@ CREATE TABLE dim_deaths (
 
 CREATE TABLE dim_infections (
   infection_key SERIAL PRIMARY KEY,
-  confirmed REAL,
+  confirmed INTEGER,
   canton VARCHAR(50),
   created_date VARCHAR(50)
 );
