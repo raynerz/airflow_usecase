@@ -1,0 +1,1509 @@
+[2021-11-15 07:36:53,276] {processor.py:163} INFO - Started process (PID=1319) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:36:53,277] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:36:53,278] {logging_mixin.py:109} INFO - [2021-11-15 07:36:53,278] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:36:53,286] {logging_mixin.py:109} INFO - [2021-11-15 07:36:53,284] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:36:53,300] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:36:53,306] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.033 seconds
+[2021-11-15 07:37:24,148] {processor.py:163} INFO - Started process (PID=1368) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:37:24,149] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:37:24,150] {logging_mixin.py:109} INFO - [2021-11-15 07:37:24,150] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:37:24,155] {logging_mixin.py:109} INFO - [2021-11-15 07:37:24,154] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:37:24,166] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:37:24,171] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.026 seconds
+[2021-11-15 07:37:54,550] {processor.py:163} INFO - Started process (PID=1426) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:37:54,551] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:37:54,552] {logging_mixin.py:109} INFO - [2021-11-15 07:37:54,551] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:37:54,558] {logging_mixin.py:109} INFO - [2021-11-15 07:37:54,556] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:37:54,570] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:37:54,577] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.029 seconds
+[2021-11-15 07:41:14,699] {processor.py:163} INFO - Started process (PID=39) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:41:14,703] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:41:14,704] {logging_mixin.py:109} INFO - [2021-11-15 07:41:14,704] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:41:14,739] {logging_mixin.py:109} INFO - [2021-11-15 07:41:14,737] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:41:14,759] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:41:14,768] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.090 seconds
+[2021-11-15 07:41:44,849] {processor.py:163} INFO - Started process (PID=58) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:41:44,851] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:41:44,851] {logging_mixin.py:109} INFO - [2021-11-15 07:41:44,851] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:41:44,858] {logging_mixin.py:109} INFO - [2021-11-15 07:41:44,857] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:41:44,870] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:41:44,876] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.030 seconds
+[2021-11-15 07:42:14,960] {processor.py:163} INFO - Started process (PID=75) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:42:14,962] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:42:14,962] {logging_mixin.py:109} INFO - [2021-11-15 07:42:14,962] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:42:14,969] {logging_mixin.py:109} INFO - [2021-11-15 07:42:14,967] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:42:14,983] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:42:14,989] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.032 seconds
+[2021-11-15 07:42:45,084] {processor.py:163} INFO - Started process (PID=100) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:42:45,086] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:42:45,087] {logging_mixin.py:109} INFO - [2021-11-15 07:42:45,087] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:42:45,095] {logging_mixin.py:109} INFO - [2021-11-15 07:42:45,093] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:42:45,111] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:42:45,118] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.037 seconds
+[2021-11-15 07:43:15,188] {processor.py:163} INFO - Started process (PID=117) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:43:15,190] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:43:15,190] {logging_mixin.py:109} INFO - [2021-11-15 07:43:15,190] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:43:15,196] {logging_mixin.py:109} INFO - [2021-11-15 07:43:15,195] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:43:15,207] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:43:15,214] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.028 seconds
+[2021-11-15 07:43:45,299] {processor.py:163} INFO - Started process (PID=144) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:43:45,301] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:43:45,301] {logging_mixin.py:109} INFO - [2021-11-15 07:43:45,301] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:43:45,308] {logging_mixin.py:109} INFO - [2021-11-15 07:43:45,307] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:43:45,324] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:43:45,330] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.033 seconds
+[2021-11-15 07:44:15,441] {processor.py:163} INFO - Started process (PID=163) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:44:15,443] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:44:15,444] {logging_mixin.py:109} INFO - [2021-11-15 07:44:15,444] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:44:15,456] {logging_mixin.py:109} INFO - [2021-11-15 07:44:15,454] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:44:15,474] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:44:15,483] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.045 seconds
+[2021-11-15 07:44:45,560] {processor.py:163} INFO - Started process (PID=188) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:44:45,561] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:44:45,562] {logging_mixin.py:109} INFO - [2021-11-15 07:44:45,562] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:44:45,570] {logging_mixin.py:109} INFO - [2021-11-15 07:44:45,568] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:44:45,581] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:44:45,587] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.029 seconds
+[2021-11-15 07:45:15,663] {processor.py:163} INFO - Started process (PID=206) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:45:15,665] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:45:15,665] {logging_mixin.py:109} INFO - [2021-11-15 07:45:15,665] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:45:15,673] {logging_mixin.py:109} INFO - [2021-11-15 07:45:15,671] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:45:15,690] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:45:15,699] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.039 seconds
+[2021-11-15 07:45:45,792] {processor.py:163} INFO - Started process (PID=223) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:45:45,793] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:45:45,794] {logging_mixin.py:109} INFO - [2021-11-15 07:45:45,793] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:45:45,800] {logging_mixin.py:109} INFO - [2021-11-15 07:45:45,799] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:45:45,812] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:45:45,817] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.028 seconds
+[2021-11-15 07:46:15,920] {processor.py:163} INFO - Started process (PID=248) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:46:15,921] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:46:15,922] {logging_mixin.py:109} INFO - [2021-11-15 07:46:15,922] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:46:15,931] {logging_mixin.py:109} INFO - [2021-11-15 07:46:15,930] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:46:15,946] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:46:15,953] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.037 seconds
+[2021-11-15 07:46:46,028] {processor.py:163} INFO - Started process (PID=265) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:46:46,029] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:46:46,030] {logging_mixin.py:109} INFO - [2021-11-15 07:46:46,030] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:46:46,036] {logging_mixin.py:109} INFO - [2021-11-15 07:46:46,035] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:46:46,049] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:46:46,055] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.030 seconds
+[2021-11-15 07:47:16,165] {processor.py:163} INFO - Started process (PID=291) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:47:16,167] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:47:16,167] {logging_mixin.py:109} INFO - [2021-11-15 07:47:16,167] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:47:16,175] {logging_mixin.py:109} INFO - [2021-11-15 07:47:16,174] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:47:16,190] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:47:16,196] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.035 seconds
+[2021-11-15 07:47:46,299] {processor.py:163} INFO - Started process (PID=312) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:47:46,301] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:47:46,302] {logging_mixin.py:109} INFO - [2021-11-15 07:47:46,302] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:47:46,311] {logging_mixin.py:109} INFO - [2021-11-15 07:47:46,310] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:47:46,356] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:47:46,363] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.067 seconds
+[2021-11-15 07:48:16,431] {processor.py:163} INFO - Started process (PID=338) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:48:16,432] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:48:16,432] {logging_mixin.py:109} INFO - [2021-11-15 07:48:16,432] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:48:16,439] {logging_mixin.py:109} INFO - [2021-11-15 07:48:16,437] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:48:16,452] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:48:16,458] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.030 seconds
+[2021-11-15 07:48:46,536] {processor.py:163} INFO - Started process (PID=355) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:48:46,537] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:48:46,538] {logging_mixin.py:109} INFO - [2021-11-15 07:48:46,538] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:48:46,544] {logging_mixin.py:109} INFO - [2021-11-15 07:48:46,543] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:48:46,557] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:48:46,562] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.029 seconds
+[2021-11-15 07:49:16,655] {processor.py:163} INFO - Started process (PID=373) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:49:16,656] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:49:16,657] {logging_mixin.py:109} INFO - [2021-11-15 07:49:16,657] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:49:16,663] {logging_mixin.py:109} INFO - [2021-11-15 07:49:16,661] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:49:16,675] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:49:16,681] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.028 seconds
+[2021-11-15 07:49:46,803] {processor.py:163} INFO - Started process (PID=398) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:49:46,805] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:49:46,806] {logging_mixin.py:109} INFO - [2021-11-15 07:49:46,806] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:49:46,818] {logging_mixin.py:109} INFO - [2021-11-15 07:49:46,816] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:49:46,834] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:49:46,841] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.042 seconds
+[2021-11-15 07:50:16,940] {processor.py:163} INFO - Started process (PID=416) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:50:16,942] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:50:16,943] {logging_mixin.py:109} INFO - [2021-11-15 07:50:16,943] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:50:16,950] {logging_mixin.py:109} INFO - [2021-11-15 07:50:16,949] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:50:16,966] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:50:16,972] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.036 seconds
+[2021-11-15 07:50:47,051] {processor.py:163} INFO - Started process (PID=442) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:50:47,052] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:50:47,053] {logging_mixin.py:109} INFO - [2021-11-15 07:50:47,053] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:50:47,061] {logging_mixin.py:109} INFO - [2021-11-15 07:50:47,060] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:50:47,077] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:50:47,088] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.041 seconds
+[2021-11-15 07:51:17,195] {processor.py:163} INFO - Started process (PID=459) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:51:17,197] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:51:17,198] {logging_mixin.py:109} INFO - [2021-11-15 07:51:17,197] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:51:17,205] {logging_mixin.py:109} INFO - [2021-11-15 07:51:17,204] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:51:17,220] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:51:17,227] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.035 seconds
+[2021-11-15 07:51:47,307] {processor.py:163} INFO - Started process (PID=484) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:51:47,308] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:51:47,309] {logging_mixin.py:109} INFO - [2021-11-15 07:51:47,309] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:51:47,314] {logging_mixin.py:109} INFO - [2021-11-15 07:51:47,313] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:51:47,326] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:51:47,331] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.027 seconds
+[2021-11-15 07:52:17,411] {processor.py:163} INFO - Started process (PID=502) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:52:17,413] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:52:17,413] {logging_mixin.py:109} INFO - [2021-11-15 07:52:17,413] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:52:17,420] {logging_mixin.py:109} INFO - [2021-11-15 07:52:17,419] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:52:17,434] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:52:17,440] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.031 seconds
+[2021-11-15 07:52:47,534] {processor.py:163} INFO - Started process (PID=519) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:52:47,536] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:52:47,536] {logging_mixin.py:109} INFO - [2021-11-15 07:52:47,536] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:52:47,542] {logging_mixin.py:109} INFO - [2021-11-15 07:52:47,540] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:52:47,553] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:52:47,559] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.027 seconds
+[2021-11-15 07:53:17,676] {processor.py:163} INFO - Started process (PID=546) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:53:17,677] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:53:17,678] {logging_mixin.py:109} INFO - [2021-11-15 07:53:17,677] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:53:17,684] {logging_mixin.py:109} INFO - [2021-11-15 07:53:17,682] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:53:17,698] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:53:17,705] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.032 seconds
+[2021-11-15 07:53:47,814] {processor.py:163} INFO - Started process (PID=563) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:53:47,816] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:53:47,817] {logging_mixin.py:109} INFO - [2021-11-15 07:53:47,817] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:53:47,825] {logging_mixin.py:109} INFO - [2021-11-15 07:53:47,824] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:53:47,839] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:53:47,846] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.036 seconds
+[2021-11-15 07:54:17,927] {processor.py:163} INFO - Started process (PID=588) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:54:17,929] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:54:17,929] {logging_mixin.py:109} INFO - [2021-11-15 07:54:17,929] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:54:17,935] {logging_mixin.py:109} INFO - [2021-11-15 07:54:17,934] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:54:17,951] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:54:17,958] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.034 seconds
+[2021-11-15 07:54:48,034] {processor.py:163} INFO - Started process (PID=605) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:54:48,036] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:54:48,037] {logging_mixin.py:109} INFO - [2021-11-15 07:54:48,036] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:54:48,045] {logging_mixin.py:109} INFO - [2021-11-15 07:54:48,043] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:54:48,060] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:54:48,068] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.037 seconds
+[2021-11-15 07:55:18,184] {processor.py:163} INFO - Started process (PID=627) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:55:18,186] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:55:18,186] {logging_mixin.py:109} INFO - [2021-11-15 07:55:18,186] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:55:18,194] {logging_mixin.py:109} INFO - [2021-11-15 07:55:18,192] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:55:18,207] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:55:18,215] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.034 seconds
+[2021-11-15 07:55:48,300] {processor.py:163} INFO - Started process (PID=651) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:55:48,301] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:55:48,301] {logging_mixin.py:109} INFO - [2021-11-15 07:55:48,301] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:55:48,308] {logging_mixin.py:109} INFO - [2021-11-15 07:55:48,307] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 68, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 135, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 537, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to PythonOperator (task_id: initialize_dwh_conn). Invalid arguments were:
+**kwargs: {'provide_context': False}
+[2021-11-15 07:55:48,322] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:55:48,328] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.032 seconds
+[2021-11-15 07:56:09,373] {processor.py:163} INFO - Started process (PID=668) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:56:09,375] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:56:09,375] {logging_mixin.py:109} INFO - [2021-11-15 07:56:09,375] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:56:09,408] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:56:13,244] {logging_mixin.py:109} INFO - [2021-11-15 07:56:13,244] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 07:56:14,497] {logging_mixin.py:109} INFO - [2021-11-15 07:56:14,497] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 07:56:14,518] {logging_mixin.py:109} INFO - [2021-11-15 07:56:14,518] {manager.py:496} INFO - Created Permission View: can edit on DAG:init_dwh_conn
+[2021-11-15 07:56:14,528] {logging_mixin.py:109} INFO - [2021-11-15 07:56:14,528] {manager.py:496} INFO - Created Permission View: can read on DAG:init_dwh_conn
+[2021-11-15 07:56:14,528] {logging_mixin.py:109} INFO - [2021-11-15 07:56:14,528] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:56:14,538] {logging_mixin.py:109} INFO - [2021-11-15 07:56:14,537] {dag.py:2408} INFO - Creating ORM DAG for init_dwh_conn
+[2021-11-15 07:56:14,547] {logging_mixin.py:109} INFO - [2021-11-15 07:56:14,547] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to 2021-11-08T00:00:00+00:00
+[2021-11-15 07:56:14,577] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 5.205 seconds
+[2021-11-15 07:56:44,651] {processor.py:163} INFO - Started process (PID=693) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:56:44,660] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:56:44,661] {logging_mixin.py:109} INFO - [2021-11-15 07:56:44,661] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:56:44,687] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:56:44,699] {logging_mixin.py:109} INFO - [2021-11-15 07:56:44,698] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:56:44,720] {logging_mixin.py:109} INFO - [2021-11-15 07:56:44,720] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 07:56:44,733] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.085 seconds
+[2021-11-15 07:57:14,798] {processor.py:163} INFO - Started process (PID=719) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:57:14,812] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:57:14,814] {logging_mixin.py:109} INFO - [2021-11-15 07:57:14,814] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:57:14,851] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:57:14,861] {logging_mixin.py:109} INFO - [2021-11-15 07:57:14,861] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:57:14,878] {logging_mixin.py:109} INFO - [2021-11-15 07:57:14,878] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 07:57:14,887] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.099 seconds
+[2021-11-15 07:57:44,965] {processor.py:163} INFO - Started process (PID=737) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:57:44,969] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:57:44,970] {logging_mixin.py:109} INFO - [2021-11-15 07:57:44,970] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:57:45,008] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:57:45,016] {logging_mixin.py:109} INFO - [2021-11-15 07:57:45,016] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:57:45,032] {logging_mixin.py:109} INFO - [2021-11-15 07:57:45,032] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 07:57:45,042] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.086 seconds
+[2021-11-15 07:58:15,080] {processor.py:163} INFO - Started process (PID=762) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:58:15,082] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:58:15,083] {logging_mixin.py:109} INFO - [2021-11-15 07:58:15,083] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:58:15,117] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:58:15,131] {logging_mixin.py:109} INFO - [2021-11-15 07:58:15,131] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:58:15,164] {logging_mixin.py:109} INFO - [2021-11-15 07:58:15,164] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 07:58:15,178] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.102 seconds
+[2021-11-15 07:58:45,207] {processor.py:163} INFO - Started process (PID=779) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:58:45,209] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:58:45,209] {logging_mixin.py:109} INFO - [2021-11-15 07:58:45,209] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:58:45,230] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:58:45,245] {logging_mixin.py:109} INFO - [2021-11-15 07:58:45,245] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:58:45,262] {logging_mixin.py:109} INFO - [2021-11-15 07:58:45,262] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 07:58:45,271] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.067 seconds
+[2021-11-15 07:59:15,348] {processor.py:163} INFO - Started process (PID=804) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:59:15,350] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:59:15,350] {logging_mixin.py:109} INFO - [2021-11-15 07:59:15,350] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:59:15,370] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:59:15,377] {logging_mixin.py:109} INFO - [2021-11-15 07:59:15,377] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:59:15,391] {logging_mixin.py:109} INFO - [2021-11-15 07:59:15,391] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 07:59:15,401] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.054 seconds
+[2021-11-15 07:59:45,486] {processor.py:163} INFO - Started process (PID=821) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:59:45,489] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 07:59:45,490] {logging_mixin.py:109} INFO - [2021-11-15 07:59:45,490] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:59:45,521] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 07:59:45,530] {logging_mixin.py:109} INFO - [2021-11-15 07:59:45,530] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 07:59:45,545] {logging_mixin.py:109} INFO - [2021-11-15 07:59:45,545] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 07:59:45,554] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.078 seconds
+[2021-11-15 08:00:15,616] {processor.py:163} INFO - Started process (PID=838) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:00:15,618] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:00:15,618] {logging_mixin.py:109} INFO - [2021-11-15 08:00:15,618] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:00:15,645] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:00:15,654] {logging_mixin.py:109} INFO - [2021-11-15 08:00:15,654] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:00:15,670] {logging_mixin.py:109} INFO - [2021-11-15 08:00:15,670] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:00:15,678] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.065 seconds
+[2021-11-15 08:00:39,702] {processor.py:163} INFO - Started process (PID=855) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:00:39,703] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:00:39,704] {logging_mixin.py:109} INFO - [2021-11-15 08:00:39,704] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:00:39,705] {logging_mixin.py:109} INFO - [2021-11-15 08:00:39,705] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 70
+    t2 =
+       ^
+SyntaxError: invalid syntax
+[2021-11-15 08:00:39,718] {processor.py:668} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:00:39,718] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:00:39,724] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.024 seconds
+[2021-11-15 08:01:09,872] {processor.py:163} INFO - Started process (PID=880) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:01:09,874] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:01:09,875] {logging_mixin.py:109} INFO - [2021-11-15 08:01:09,875] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:01:09,877] {logging_mixin.py:109} INFO - [2021-11-15 08:01:09,876] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 70
+    t2 =
+       ^
+SyntaxError: invalid syntax
+[2021-11-15 08:01:09,891] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:01:09,898] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.031 seconds
+[2021-11-15 08:01:39,977] {processor.py:163} INFO - Started process (PID=897) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:01:39,979] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:01:39,979] {logging_mixin.py:109} INFO - [2021-11-15 08:01:39,979] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:01:39,980] {logging_mixin.py:109} INFO - [2021-11-15 08:01:39,980] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 70
+    t2 =
+       ^
+SyntaxError: invalid syntax
+[2021-11-15 08:01:39,992] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:01:39,997] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.022 seconds
+[2021-11-15 08:02:10,127] {processor.py:163} INFO - Started process (PID=922) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:02:10,130] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:02:10,131] {logging_mixin.py:109} INFO - [2021-11-15 08:02:10,131] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:02:10,135] {logging_mixin.py:109} INFO - [2021-11-15 08:02:10,133] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 70
+    t2 =
+       ^
+SyntaxError: invalid syntax
+[2021-11-15 08:02:10,164] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:02:10,177] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.055 seconds
+[2021-11-15 08:02:40,250] {processor.py:163} INFO - Started process (PID=939) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:02:40,252] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:02:40,253] {logging_mixin.py:109} INFO - [2021-11-15 08:02:40,253] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:02:40,255] {logging_mixin.py:109} INFO - [2021-11-15 08:02:40,254] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 70
+    t2 =
+       ^
+SyntaxError: invalid syntax
+[2021-11-15 08:02:40,270] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:02:40,277] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.030 seconds
+[2021-11-15 08:03:10,371] {processor.py:163} INFO - Started process (PID=965) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:10,373] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:03:10,374] {logging_mixin.py:109} INFO - [2021-11-15 08:03:10,373] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:10,376] {logging_mixin.py:109} INFO - [2021-11-15 08:03:10,375] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 70
+    t2 =
+       ^
+SyntaxError: invalid syntax
+[2021-11-15 08:03:10,401] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:10,411] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.044 seconds
+[2021-11-15 08:03:40,484] {processor.py:163} INFO - Started process (PID=983) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:40,485] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:03:40,486] {logging_mixin.py:109} INFO - [2021-11-15 08:03:40,486] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:40,487] {logging_mixin.py:109} INFO - [2021-11-15 08:03:40,487] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 70
+    t2 =
+       ^
+SyntaxError: invalid syntax
+[2021-11-15 08:03:40,499] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:40,505] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.024 seconds
+[2021-11-15 08:03:59,546] {processor.py:163} INFO - Started process (PID=1000) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:59,547] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:03:59,548] {logging_mixin.py:109} INFO - [2021-11-15 08:03:59,548] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:59,561] {logging_mixin.py:109} INFO - [2021-11-15 08:03:59,560] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 73, in <module>
+    template_ext= './sql/dwh_tables.sql')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['sql'] is required
+[2021-11-15 08:03:59,575] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:03:59,583] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.040 seconds
+[2021-11-15 08:04:29,681] {processor.py:163} INFO - Started process (PID=1017) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:04:29,685] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:04:29,687] {logging_mixin.py:109} INFO - [2021-11-15 08:04:29,686] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:04:29,708] {logging_mixin.py:109} INFO - [2021-11-15 08:04:29,707] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 73, in <module>
+    template_ext= './sql/dwh_tables.sql')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['sql'] is required
+[2021-11-15 08:04:29,722] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:04:29,729] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.057 seconds
+[2021-11-15 08:04:59,788] {processor.py:163} INFO - Started process (PID=1034) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:04:59,789] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:04:59,790] {logging_mixin.py:109} INFO - [2021-11-15 08:04:59,790] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:04:59,802] {logging_mixin.py:109} INFO - [2021-11-15 08:04:59,801] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 73, in <module>
+    template_ext= './sql/dwh_tables.sql')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['sql'] is required
+[2021-11-15 08:04:59,819] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:04:59,827] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.042 seconds
+[2021-11-15 08:05:03,809] {processor.py:163} INFO - Started process (PID=1044) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:05:03,810] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:05:03,810] {logging_mixin.py:109} INFO - [2021-11-15 08:05:03,810] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:05:03,822] {logging_mixin.py:109} INFO - [2021-11-15 08:05:03,821] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 74, in <module>
+    dag = dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['sql'] is required
+[2021-11-15 08:05:03,835] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:05:03,842] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.036 seconds
+[2021-11-15 08:05:33,952] {processor.py:163} INFO - Started process (PID=1061) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:05:33,955] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:05:33,957] {logging_mixin.py:109} INFO - [2021-11-15 08:05:33,957] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:05:33,977] {logging_mixin.py:109} INFO - [2021-11-15 08:05:33,975] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 74, in <module>
+    dag = dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['sql'] is required
+[2021-11-15 08:05:33,993] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:05:34,001] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.057 seconds
+[2021-11-15 08:06:04,063] {processor.py:163} INFO - Started process (PID=1087) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:04,065] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:06:04,066] {logging_mixin.py:109} INFO - [2021-11-15 08:06:04,066] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:04,079] {logging_mixin.py:109} INFO - [2021-11-15 08:06:04,078] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 74, in <module>
+    dag = dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['sql'] is required
+[2021-11-15 08:06:04,100] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:04,108] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.048 seconds
+[2021-11-15 08:06:16,125] {processor.py:163} INFO - Started process (PID=1096) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:16,127] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:06:16,127] {logging_mixin.py:109} INFO - [2021-11-15 08:06:16,127] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:16,145] {logging_mixin.py:109} INFO - [2021-11-15 08:06:16,144] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 74, in <module>
+    dag = dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 59, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 54, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (Build Stars) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2021-11-15 08:06:16,164] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:16,177] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.056 seconds
+[2021-11-15 08:06:46,261] {processor.py:163} INFO - Started process (PID=1115) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:46,265] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:06:46,266] {logging_mixin.py:109} INFO - [2021-11-15 08:06:46,266] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:46,289] {logging_mixin.py:109} INFO - [2021-11-15 08:06:46,287] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/initialize_dwh.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/initialize_dwh.py", line 74, in <module>
+    dag = dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 59, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 54, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (Build Stars) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2021-11-15 08:06:46,303] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:06:46,310] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.056 seconds
+[2021-11-15 08:07:13,416] {processor.py:163} INFO - Started process (PID=1132) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:13,420] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:07:13,421] {logging_mixin.py:109} INFO - [2021-11-15 08:07:13,421] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:13,493] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:13,761] {logging_mixin.py:109} INFO - [2021-11-15 08:07:13,761] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:07:13,775] {logging_mixin.py:109} INFO - [2021-11-15 08:07:13,774] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:07:13,787] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.380 seconds
+[2021-11-15 08:07:21,446] {processor.py:163} INFO - Started process (PID=1141) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:21,447] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:07:21,448] {logging_mixin.py:109} INFO - [2021-11-15 08:07:21,448] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:21,483] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:21,487] {logging_mixin.py:109} INFO - [2021-11-15 08:07:21,487] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:07:21,506] {logging_mixin.py:109} INFO - [2021-11-15 08:07:21,506] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:07:21,552] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.109 seconds
+[2021-11-15 08:07:22,472] {processor.py:163} INFO - Started process (PID=1142) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:22,474] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:07:22,475] {logging_mixin.py:109} INFO - [2021-11-15 08:07:22,475] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:22,513] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:22,517] {logging_mixin.py:109} INFO - [2021-11-15 08:07:22,517] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:07:22,536] {logging_mixin.py:109} INFO - [2021-11-15 08:07:22,536] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:07:22,548] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.082 seconds
+[2021-11-15 08:07:52,569] {processor.py:163} INFO - Started process (PID=1160) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:52,571] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:07:52,571] {logging_mixin.py:109} INFO - [2021-11-15 08:07:52,571] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:52,596] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:07:52,837] {logging_mixin.py:109} INFO - [2021-11-15 08:07:52,837] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:07:52,857] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.290 seconds
+[2021-11-15 08:08:22,933] {processor.py:163} INFO - Started process (PID=1185) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:08:22,937] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:08:22,939] {logging_mixin.py:109} INFO - [2021-11-15 08:08:22,939] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:08:22,978] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:08:22,987] {logging_mixin.py:109} INFO - [2021-11-15 08:08:22,987] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:08:23,003] {logging_mixin.py:109} INFO - [2021-11-15 08:08:23,003] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:08:23,012] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.087 seconds
+[2021-11-15 08:08:53,077] {processor.py:163} INFO - Started process (PID=1202) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:08:53,079] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:08:53,079] {logging_mixin.py:109} INFO - [2021-11-15 08:08:53,079] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:08:53,103] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:08:53,110] {logging_mixin.py:109} INFO - [2021-11-15 08:08:53,110] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:08:53,124] {logging_mixin.py:109} INFO - [2021-11-15 08:08:53,124] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:08:53,132] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.057 seconds
+[2021-11-15 08:09:23,230] {processor.py:163} INFO - Started process (PID=1227) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:09:23,231] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:09:23,232] {logging_mixin.py:109} INFO - [2021-11-15 08:09:23,231] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:09:23,267] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:09:23,278] {logging_mixin.py:109} INFO - [2021-11-15 08:09:23,277] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:09:23,296] {logging_mixin.py:109} INFO - [2021-11-15 08:09:23,295] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:09:23,306] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.080 seconds
+[2021-11-15 08:09:53,380] {processor.py:163} INFO - Started process (PID=1244) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:09:53,383] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:09:53,384] {logging_mixin.py:109} INFO - [2021-11-15 08:09:53,384] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:09:53,426] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:09:53,435] {logging_mixin.py:109} INFO - [2021-11-15 08:09:53,434] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:09:53,450] {logging_mixin.py:109} INFO - [2021-11-15 08:09:53,450] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:09:53,458] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.087 seconds
+[2021-11-15 08:10:23,473] {processor.py:163} INFO - Started process (PID=1261) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:10:23,474] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:10:23,475] {logging_mixin.py:109} INFO - [2021-11-15 08:10:23,475] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:10:23,499] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:10:23,507] {logging_mixin.py:109} INFO - [2021-11-15 08:10:23,507] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:10:23,521] {logging_mixin.py:109} INFO - [2021-11-15 08:10:23,521] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:10:23,530] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.060 seconds
+[2021-11-15 08:10:53,640] {processor.py:163} INFO - Started process (PID=1286) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:10:53,642] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:10:53,643] {logging_mixin.py:109} INFO - [2021-11-15 08:10:53,643] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:10:53,673] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:10:53,682] {logging_mixin.py:109} INFO - [2021-11-15 08:10:53,682] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:10:53,697] {logging_mixin.py:109} INFO - [2021-11-15 08:10:53,697] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:10:53,706] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.068 seconds
+[2021-11-15 08:11:23,782] {processor.py:163} INFO - Started process (PID=1304) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:11:23,783] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:11:23,784] {logging_mixin.py:109} INFO - [2021-11-15 08:11:23,784] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:11:23,807] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:11:23,815] {logging_mixin.py:109} INFO - [2021-11-15 08:11:23,814] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:11:23,829] {logging_mixin.py:109} INFO - [2021-11-15 08:11:23,829] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:11:23,837] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.058 seconds
+[2021-11-15 08:11:53,891] {processor.py:163} INFO - Started process (PID=1330) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:11:53,893] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:11:53,893] {logging_mixin.py:109} INFO - [2021-11-15 08:11:53,893] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:11:53,919] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:11:53,926] {logging_mixin.py:109} INFO - [2021-11-15 08:11:53,926] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:11:53,940] {logging_mixin.py:109} INFO - [2021-11-15 08:11:53,940] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:11:53,948] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.058 seconds
+[2021-11-15 08:14:09,702] {processor.py:163} INFO - Started process (PID=38) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:14:09,704] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:14:09,705] {logging_mixin.py:109} INFO - [2021-11-15 08:14:09,705] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:14:09,772] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:14:15,091] {logging_mixin.py:109} INFO - [2021-11-15 08:14:15,091] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:14:16,526] {logging_mixin.py:109} INFO - [2021-11-15 08:14:16,526] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:14:16,547] {logging_mixin.py:109} INFO - [2021-11-15 08:14:16,547] {manager.py:496} INFO - Created Permission View: can read on DAG:init_dwh_conn
+[2021-11-15 08:14:16,554] {logging_mixin.py:109} INFO - [2021-11-15 08:14:16,554] {manager.py:496} INFO - Created Permission View: can edit on DAG:init_dwh_conn
+[2021-11-15 08:14:16,555] {logging_mixin.py:109} INFO - [2021-11-15 08:14:16,555] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:14:16,563] {logging_mixin.py:109} INFO - [2021-11-15 08:14:16,562] {dag.py:2408} INFO - Creating ORM DAG for init_dwh_conn
+[2021-11-15 08:14:16,570] {logging_mixin.py:109} INFO - [2021-11-15 08:14:16,570] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to 2021-11-08T00:00:00+00:00
+[2021-11-15 08:14:16,580] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 6.882 seconds
+[2021-11-15 08:14:46,675] {processor.py:163} INFO - Started process (PID=71) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:14:46,676] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:14:46,677] {logging_mixin.py:109} INFO - [2021-11-15 08:14:46,677] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:14:46,700] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:14:46,709] {logging_mixin.py:109} INFO - [2021-11-15 08:14:46,709] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:14:46,726] {logging_mixin.py:109} INFO - [2021-11-15 08:14:46,726] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to 2021-11-08T00:00:00+00:00
+[2021-11-15 08:14:46,736] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.064 seconds
+[2021-11-15 08:15:16,813] {processor.py:163} INFO - Started process (PID=88) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:15:16,818] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:15:16,820] {logging_mixin.py:109} INFO - [2021-11-15 08:15:16,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:15:16,863] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:15:16,872] {logging_mixin.py:109} INFO - [2021-11-15 08:15:16,872] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:15:16,889] {logging_mixin.py:109} INFO - [2021-11-15 08:15:16,889] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:15:16,898] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.093 seconds
+[2021-11-15 08:15:46,918] {processor.py:163} INFO - Started process (PID=105) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:15:46,920] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:15:46,920] {logging_mixin.py:109} INFO - [2021-11-15 08:15:46,920] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:15:46,967] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:15:46,977] {logging_mixin.py:109} INFO - [2021-11-15 08:15:46,977] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:15:46,993] {logging_mixin.py:109} INFO - [2021-11-15 08:15:46,993] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:15:47,002] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.087 seconds
+[2021-11-15 08:16:17,091] {processor.py:163} INFO - Started process (PID=132) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:17,094] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:16:17,094] {logging_mixin.py:109} INFO - [2021-11-15 08:16:17,094] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:17,130] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:17,140] {logging_mixin.py:109} INFO - [2021-11-15 08:16:17,140] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:16:17,157] {logging_mixin.py:109} INFO - [2021-11-15 08:16:17,157] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:16:17,166] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.077 seconds
+[2021-11-15 08:16:47,243] {processor.py:163} INFO - Started process (PID=149) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:47,246] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:16:47,247] {logging_mixin.py:109} INFO - [2021-11-15 08:16:47,247] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:47,299] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:47,307] {logging_mixin.py:109} INFO - [2021-11-15 08:16:47,307] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:16:47,326] {logging_mixin.py:109} INFO - [2021-11-15 08:16:47,326] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:16:47,338] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.101 seconds
+[2021-11-15 08:16:49,254] {processor.py:163} INFO - Started process (PID=150) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:49,255] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:16:49,255] {logging_mixin.py:109} INFO - [2021-11-15 08:16:49,255] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:49,288] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:49,296] {logging_mixin.py:109} INFO - [2021-11-15 08:16:49,296] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:16:49,312] {logging_mixin.py:109} INFO - [2021-11-15 08:16:49,312] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:16:49,324] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.074 seconds
+[2021-11-15 08:16:50,257] {processor.py:163} INFO - Started process (PID=151) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:50,258] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:16:50,258] {logging_mixin.py:109} INFO - [2021-11-15 08:16:50,258] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:50,288] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:16:50,296] {logging_mixin.py:109} INFO - [2021-11-15 08:16:50,296] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:16:50,313] {logging_mixin.py:109} INFO - [2021-11-15 08:16:50,313] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:16:50,324] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.069 seconds
+[2021-11-15 08:17:20,372] {processor.py:163} INFO - Started process (PID=177) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:17:20,374] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:17:20,374] {logging_mixin.py:109} INFO - [2021-11-15 08:17:20,374] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:17:20,429] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:17:20,437] {logging_mixin.py:109} INFO - [2021-11-15 08:17:20,437] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:17:20,455] {logging_mixin.py:109} INFO - [2021-11-15 08:17:20,454] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:17:20,465] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.097 seconds
+[2021-11-15 08:20:17,288] {processor.py:163} INFO - Started process (PID=37) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:20:17,290] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:20:17,291] {logging_mixin.py:109} INFO - [2021-11-15 08:20:17,291] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:20:17,370] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:20:22,445] {logging_mixin.py:109} INFO - [2021-11-15 08:20:22,445] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:20:23,787] {logging_mixin.py:109} INFO - [2021-11-15 08:20:23,787] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:20:23,807] {logging_mixin.py:109} INFO - [2021-11-15 08:20:23,807] {manager.py:496} INFO - Created Permission View: can edit on DAG:init_dwh_conn
+[2021-11-15 08:20:23,816] {logging_mixin.py:109} INFO - [2021-11-15 08:20:23,816] {manager.py:496} INFO - Created Permission View: can read on DAG:init_dwh_conn
+[2021-11-15 08:20:23,816] {logging_mixin.py:109} INFO - [2021-11-15 08:20:23,816] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:20:23,825] {logging_mixin.py:109} INFO - [2021-11-15 08:20:23,824] {dag.py:2408} INFO - Creating ORM DAG for init_dwh_conn
+[2021-11-15 08:20:23,833] {logging_mixin.py:109} INFO - [2021-11-15 08:20:23,833] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to 2021-11-08T00:00:00+00:00
+[2021-11-15 08:20:23,845] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 6.561 seconds
+[2021-11-15 08:20:53,928] {processor.py:163} INFO - Started process (PID=71) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:20:53,930] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:20:53,931] {logging_mixin.py:109} INFO - [2021-11-15 08:20:53,931] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:20:53,960] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:20:53,974] {logging_mixin.py:109} INFO - [2021-11-15 08:20:53,974] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:20:53,998] {logging_mixin.py:109} INFO - [2021-11-15 08:20:53,997] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to 2021-11-08T00:00:00+00:00
+[2021-11-15 08:20:54,009] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.083 seconds
+[2021-11-15 08:21:24,088] {processor.py:163} INFO - Started process (PID=89) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:21:24,092] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:21:24,094] {logging_mixin.py:109} INFO - [2021-11-15 08:21:24,093] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:21:24,141] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:21:24,150] {logging_mixin.py:109} INFO - [2021-11-15 08:21:24,150] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:21:24,167] {logging_mixin.py:109} INFO - [2021-11-15 08:21:24,167] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:21:24,181] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.101 seconds
+[2021-11-15 08:21:54,233] {processor.py:163} INFO - Started process (PID=106) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:21:54,234] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:21:54,235] {logging_mixin.py:109} INFO - [2021-11-15 08:21:54,235] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:21:54,263] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:21:54,275] {logging_mixin.py:109} INFO - [2021-11-15 08:21:54,275] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:21:54,293] {logging_mixin.py:109} INFO - [2021-11-15 08:21:54,293] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:21:54,305] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.074 seconds
+[2021-11-15 08:22:24,407] {processor.py:163} INFO - Started process (PID=131) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:22:24,409] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:22:24,409] {logging_mixin.py:109} INFO - [2021-11-15 08:22:24,409] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:22:24,434] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:22:24,441] {logging_mixin.py:109} INFO - [2021-11-15 08:22:24,441] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:22:24,459] {logging_mixin.py:109} INFO - [2021-11-15 08:22:24,458] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:22:24,468] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.062 seconds
+[2021-11-15 08:22:53,522] {processor.py:163} INFO - Started process (PID=148) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:22:53,524] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:22:53,525] {logging_mixin.py:109} INFO - [2021-11-15 08:22:53,524] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:22:53,563] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:22:53,572] {logging_mixin.py:109} INFO - [2021-11-15 08:22:53,572] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:22:53,591] {logging_mixin.py:109} INFO - [2021-11-15 08:22:53,591] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:22:53,601] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.083 seconds
+[2021-11-15 08:25:32,349] {processor.py:163} INFO - Started process (PID=38) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:25:32,351] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:25:32,352] {logging_mixin.py:109} INFO - [2021-11-15 08:25:32,352] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:25:32,415] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:25:37,255] {logging_mixin.py:109} INFO - [2021-11-15 08:25:37,255] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:25:38,718] {logging_mixin.py:109} INFO - [2021-11-15 08:25:38,718] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:25:38,741] {logging_mixin.py:109} INFO - [2021-11-15 08:25:38,741] {manager.py:496} INFO - Created Permission View: can read on DAG:init_dwh_conn
+[2021-11-15 08:25:38,749] {logging_mixin.py:109} INFO - [2021-11-15 08:25:38,749] {manager.py:496} INFO - Created Permission View: can edit on DAG:init_dwh_conn
+[2021-11-15 08:25:38,750] {logging_mixin.py:109} INFO - [2021-11-15 08:25:38,750] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:25:38,760] {logging_mixin.py:109} INFO - [2021-11-15 08:25:38,760] {dag.py:2408} INFO - Creating ORM DAG for init_dwh_conn
+[2021-11-15 08:25:38,768] {logging_mixin.py:109} INFO - [2021-11-15 08:25:38,768] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to 2021-11-08T00:00:00+00:00
+[2021-11-15 08:25:38,780] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 6.435 seconds
+[2021-11-15 08:26:08,851] {processor.py:163} INFO - Started process (PID=71) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:26:08,853] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:26:08,854] {logging_mixin.py:109} INFO - [2021-11-15 08:26:08,853] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:26:08,900] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:26:08,918] {logging_mixin.py:109} INFO - [2021-11-15 08:26:08,918] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:26:08,944] {logging_mixin.py:109} INFO - [2021-11-15 08:26:08,944] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:26:08,960] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.112 seconds
+[2021-11-15 08:26:39,047] {processor.py:163} INFO - Started process (PID=88) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:26:39,051] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:26:39,053] {logging_mixin.py:109} INFO - [2021-11-15 08:26:39,052] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:26:39,092] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:26:39,101] {logging_mixin.py:109} INFO - [2021-11-15 08:26:39,100] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:26:39,116] {logging_mixin.py:109} INFO - [2021-11-15 08:26:39,116] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:26:39,124] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.087 seconds
+[2021-11-15 08:27:09,175] {processor.py:163} INFO - Started process (PID=114) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:27:09,176] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:27:09,177] {logging_mixin.py:109} INFO - [2021-11-15 08:27:09,176] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:27:09,202] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:27:09,210] {logging_mixin.py:109} INFO - [2021-11-15 08:27:09,209] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:27:09,223] {logging_mixin.py:109} INFO - [2021-11-15 08:27:09,223] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:27:09,231] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.059 seconds
+[2021-11-15 08:27:39,324] {processor.py:163} INFO - Started process (PID=131) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:27:39,328] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:27:39,329] {logging_mixin.py:109} INFO - [2021-11-15 08:27:39,329] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:27:39,374] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:27:39,382] {logging_mixin.py:109} INFO - [2021-11-15 08:27:39,382] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:27:39,396] {logging_mixin.py:109} INFO - [2021-11-15 08:27:39,396] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:27:39,405] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.088 seconds
+[2021-11-15 08:28:09,469] {processor.py:163} INFO - Started process (PID=148) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:28:09,474] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:28:09,475] {logging_mixin.py:109} INFO - [2021-11-15 08:28:09,475] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:28:09,516] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:28:09,525] {logging_mixin.py:109} INFO - [2021-11-15 08:28:09,525] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:28:09,542] {logging_mixin.py:109} INFO - [2021-11-15 08:28:09,542] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:28:09,551] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.094 seconds
+[2021-11-15 08:28:39,621] {processor.py:163} INFO - Started process (PID=173) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:28:39,624] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:28:39,626] {logging_mixin.py:109} INFO - [2021-11-15 08:28:39,626] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:28:39,664] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:28:39,672] {logging_mixin.py:109} INFO - [2021-11-15 08:28:39,672] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:28:39,687] {logging_mixin.py:109} INFO - [2021-11-15 08:28:39,687] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:28:39,696] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.083 seconds
+[2021-11-15 08:29:09,760] {processor.py:163} INFO - Started process (PID=191) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:29:09,762] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:29:09,762] {logging_mixin.py:109} INFO - [2021-11-15 08:29:09,762] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:29:09,796] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:29:09,805] {logging_mixin.py:109} INFO - [2021-11-15 08:29:09,805] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:29:09,820] {logging_mixin.py:109} INFO - [2021-11-15 08:29:09,820] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:29:09,828] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.071 seconds
+[2021-11-15 08:29:39,870] {processor.py:163} INFO - Started process (PID=216) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:29:39,871] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:29:39,872] {logging_mixin.py:109} INFO - [2021-11-15 08:29:39,872] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:29:39,899] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:29:39,909] {logging_mixin.py:109} INFO - [2021-11-15 08:29:39,909] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:29:39,936] {logging_mixin.py:109} INFO - [2021-11-15 08:29:39,936] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:29:39,947] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.079 seconds
+[2021-11-15 08:30:10,024] {processor.py:163} INFO - Started process (PID=234) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:30:10,026] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:30:10,026] {logging_mixin.py:109} INFO - [2021-11-15 08:30:10,026] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:30:10,060] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:30:10,069] {logging_mixin.py:109} INFO - [2021-11-15 08:30:10,069] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:30:10,084] {logging_mixin.py:109} INFO - [2021-11-15 08:30:10,084] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:30:10,093] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.072 seconds
+[2021-11-15 08:30:40,176] {processor.py:163} INFO - Started process (PID=259) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:30:40,177] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:30:40,178] {logging_mixin.py:109} INFO - [2021-11-15 08:30:40,178] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:30:40,210] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:30:40,221] {logging_mixin.py:109} INFO - [2021-11-15 08:30:40,221] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:30:40,241] {logging_mixin.py:109} INFO - [2021-11-15 08:30:40,241] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:30:40,252] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.079 seconds
+[2021-11-15 08:31:10,293] {processor.py:163} INFO - Started process (PID=276) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:31:10,294] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:31:10,295] {logging_mixin.py:109} INFO - [2021-11-15 08:31:10,295] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:31:10,323] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:31:10,333] {logging_mixin.py:109} INFO - [2021-11-15 08:31:10,333] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:31:10,350] {logging_mixin.py:109} INFO - [2021-11-15 08:31:10,350] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:31:10,358] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.068 seconds
+[2021-11-15 08:31:40,416] {processor.py:163} INFO - Started process (PID=294) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:31:40,418] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:31:40,419] {logging_mixin.py:109} INFO - [2021-11-15 08:31:40,419] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:31:40,443] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:31:40,451] {logging_mixin.py:109} INFO - [2021-11-15 08:31:40,451] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:31:40,465] {logging_mixin.py:109} INFO - [2021-11-15 08:31:40,465] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:31:40,473] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.059 seconds
+[2021-11-15 08:32:10,583] {processor.py:163} INFO - Started process (PID=319) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:32:10,585] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:32:10,586] {logging_mixin.py:109} INFO - [2021-11-15 08:32:10,586] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:32:10,625] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:32:10,637] {logging_mixin.py:109} INFO - [2021-11-15 08:32:10,637] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:32:10,655] {logging_mixin.py:109} INFO - [2021-11-15 08:32:10,655] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:32:10,666] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.088 seconds
+[2021-11-15 08:32:40,743] {processor.py:163} INFO - Started process (PID=337) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:32:40,747] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:32:40,749] {logging_mixin.py:109} INFO - [2021-11-15 08:32:40,748] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:32:40,787] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:32:40,795] {logging_mixin.py:109} INFO - [2021-11-15 08:32:40,795] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:32:40,810] {logging_mixin.py:109} INFO - [2021-11-15 08:32:40,810] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:32:40,819] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.085 seconds
+[2021-11-15 08:33:10,868] {processor.py:163} INFO - Started process (PID=363) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:33:10,869] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:33:10,869] {logging_mixin.py:109} INFO - [2021-11-15 08:33:10,869] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:33:10,894] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:33:10,901] {logging_mixin.py:109} INFO - [2021-11-15 08:33:10,901] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:33:10,914] {logging_mixin.py:109} INFO - [2021-11-15 08:33:10,914] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:33:10,921] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.056 seconds
+[2021-11-15 08:41:29,302] {processor.py:163} INFO - Started process (PID=37) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:41:29,304] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:41:29,305] {logging_mixin.py:109} INFO - [2021-11-15 08:41:29,305] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:41:29,413] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:41:34,904] {logging_mixin.py:109} INFO - [2021-11-15 08:41:34,904] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:41:36,503] {logging_mixin.py:109} INFO - [2021-11-15 08:41:36,503] {providers_manager.py:156} WARNING - Exception when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package: No module named 'plyvel'
+[2021-11-15 08:41:36,524] {logging_mixin.py:109} INFO - [2021-11-15 08:41:36,524] {manager.py:496} INFO - Created Permission View: can read on DAG:init_dwh_conn
+[2021-11-15 08:41:36,533] {logging_mixin.py:109} INFO - [2021-11-15 08:41:36,532] {manager.py:496} INFO - Created Permission View: can edit on DAG:init_dwh_conn
+[2021-11-15 08:41:36,533] {logging_mixin.py:109} INFO - [2021-11-15 08:41:36,533] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:41:36,542] {logging_mixin.py:109} INFO - [2021-11-15 08:41:36,542] {dag.py:2408} INFO - Creating ORM DAG for init_dwh_conn
+[2021-11-15 08:41:36,550] {logging_mixin.py:109} INFO - [2021-11-15 08:41:36,550] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to 2021-11-08T00:00:00+00:00
+[2021-11-15 08:41:36,561] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 7.263 seconds
+[2021-11-15 08:42:06,644] {processor.py:163} INFO - Started process (PID=71) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:42:06,647] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:42:06,648] {logging_mixin.py:109} INFO - [2021-11-15 08:42:06,648] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:42:06,701] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:42:06,716] {logging_mixin.py:109} INFO - [2021-11-15 08:42:06,716] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:42:06,733] {logging_mixin.py:109} INFO - [2021-11-15 08:42:06,733] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:42:06,743] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.103 seconds
+[2021-11-15 08:42:36,773] {processor.py:163} INFO - Started process (PID=88) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:42:36,775] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:42:36,776] {logging_mixin.py:109} INFO - [2021-11-15 08:42:36,776] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:42:36,814] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:42:36,823] {logging_mixin.py:109} INFO - [2021-11-15 08:42:36,823] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:42:36,839] {logging_mixin.py:109} INFO - [2021-11-15 08:42:36,839] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:42:36,848] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.078 seconds
+[2021-11-15 08:43:06,909] {processor.py:163} INFO - Started process (PID=116) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:43:06,911] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:43:06,911] {logging_mixin.py:109} INFO - [2021-11-15 08:43:06,911] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:43:06,943] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:43:06,955] {logging_mixin.py:109} INFO - [2021-11-15 08:43:06,954] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:43:06,976] {logging_mixin.py:109} INFO - [2021-11-15 08:43:06,976] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:43:06,986] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.079 seconds
+[2021-11-15 08:43:37,055] {processor.py:163} INFO - Started process (PID=133) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:43:37,059] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:43:37,060] {logging_mixin.py:109} INFO - [2021-11-15 08:43:37,060] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:43:37,103] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:43:37,111] {logging_mixin.py:109} INFO - [2021-11-15 08:43:37,111] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:43:37,126] {logging_mixin.py:109} INFO - [2021-11-15 08:43:37,126] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:43:37,134] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.086 seconds
+[2021-11-15 08:44:07,193] {processor.py:163} INFO - Started process (PID=150) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:44:07,197] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:44:07,199] {logging_mixin.py:109} INFO - [2021-11-15 08:44:07,198] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:44:07,243] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:44:07,251] {logging_mixin.py:109} INFO - [2021-11-15 08:44:07,251] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:44:07,265] {logging_mixin.py:109} INFO - [2021-11-15 08:44:07,265] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:44:07,273] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.088 seconds
+[2021-11-15 08:44:37,300] {processor.py:163} INFO - Started process (PID=175) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:44:37,303] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:44:37,303] {logging_mixin.py:109} INFO - [2021-11-15 08:44:37,303] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:44:37,345] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:44:37,353] {logging_mixin.py:109} INFO - [2021-11-15 08:44:37,353] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:44:37,367] {logging_mixin.py:109} INFO - [2021-11-15 08:44:37,367] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:44:37,380] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.083 seconds
+[2021-11-15 08:45:07,466] {processor.py:163} INFO - Started process (PID=193) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:45:07,467] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:45:07,468] {logging_mixin.py:109} INFO - [2021-11-15 08:45:07,468] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:45:07,512] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:45:07,526] {logging_mixin.py:109} INFO - [2021-11-15 08:45:07,526] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:45:07,550] {logging_mixin.py:109} INFO - [2021-11-15 08:45:07,550] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:45:07,564] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.101 seconds
+[2021-11-15 08:45:37,592] {processor.py:163} INFO - Started process (PID=218) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:45:37,594] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:45:37,594] {logging_mixin.py:109} INFO - [2021-11-15 08:45:37,594] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:45:37,621] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:45:37,630] {logging_mixin.py:109} INFO - [2021-11-15 08:45:37,630] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:45:37,645] {logging_mixin.py:109} INFO - [2021-11-15 08:45:37,644] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:45:37,653] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.063 seconds
+[2021-11-15 08:46:07,758] {processor.py:163} INFO - Started process (PID=235) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:46:07,763] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:46:07,764] {logging_mixin.py:109} INFO - [2021-11-15 08:46:07,764] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:46:07,798] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:46:07,807] {logging_mixin.py:109} INFO - [2021-11-15 08:46:07,807] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:46:07,824] {logging_mixin.py:109} INFO - [2021-11-15 08:46:07,824] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:46:07,832] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.084 seconds
+[2021-11-15 08:46:37,904] {processor.py:163} INFO - Started process (PID=252) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:46:37,906] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:46:37,907] {logging_mixin.py:109} INFO - [2021-11-15 08:46:37,906] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:46:37,930] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:46:37,937] {logging_mixin.py:109} INFO - [2021-11-15 08:46:37,937] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:46:37,951] {logging_mixin.py:109} INFO - [2021-11-15 08:46:37,951] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:46:37,959] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.057 seconds
+[2021-11-15 08:47:08,045] {processor.py:163} INFO - Started process (PID=277) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:47:08,048] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:47:08,049] {logging_mixin.py:109} INFO - [2021-11-15 08:47:08,049] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:47:08,086] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:47:08,095] {logging_mixin.py:109} INFO - [2021-11-15 08:47:08,095] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:47:08,112] {logging_mixin.py:109} INFO - [2021-11-15 08:47:08,112] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:47:08,121] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.088 seconds
+[2021-11-15 08:47:38,162] {processor.py:163} INFO - Started process (PID=294) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:47:38,164] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:47:38,164] {logging_mixin.py:109} INFO - [2021-11-15 08:47:38,164] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:47:38,188] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:47:38,196] {logging_mixin.py:109} INFO - [2021-11-15 08:47:38,196] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:47:38,210] {logging_mixin.py:109} INFO - [2021-11-15 08:47:38,210] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:47:38,217] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.057 seconds
+[2021-11-15 08:48:08,318] {processor.py:163} INFO - Started process (PID=319) to work on /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:48:08,319] {processor.py:620} INFO - Processing file /opt/airflow/dags/initialize_dwh.py for tasks to queue
+[2021-11-15 08:48:08,320] {logging_mixin.py:109} INFO - [2021-11-15 08:48:08,320] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:48:08,345] {processor.py:632} INFO - DAG(s) dict_keys(['init_dwh_conn']) retrieved from /opt/airflow/dags/initialize_dwh.py
+[2021-11-15 08:48:08,353] {logging_mixin.py:109} INFO - [2021-11-15 08:48:08,353] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-15 08:48:08,368] {logging_mixin.py:109} INFO - [2021-11-15 08:48:08,368] {dag.py:2921} INFO - Setting next_dagrun for init_dwh_conn to None
+[2021-11-15 08:48:08,377] {processor.py:171} INFO - Processing /opt/airflow/dags/initialize_dwh.py took 0.061 seconds

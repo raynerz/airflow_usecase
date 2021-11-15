@@ -12,15 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from __future__ import print_function
+import airflow
 from datetime import datetime, timedelta
-from textwrap import dedent
-
-# The DAG object; we'll need this to instantiate a DAG
-from airflow import DAG
-
-# Operators; we need this to operate!
-from airflow.operators.python import PythonOperator
-
+from airflow.operators.python_operator import PythonOperator
+from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow import models
 from airflow.settings import Session
 import logging
@@ -33,7 +29,6 @@ args = {
 }
 
 
-
 def initialize_dwh_conn():
     logging.info('Creating connections and definining sql path')
 
@@ -43,9 +38,8 @@ def initialize_dwh_conn():
         new_conn = models.Connection()
         new_conn.conn_id = "postgres_dwh"
         new_conn.conn_type = "postgres"
-        new_conn.host =  "postgres"
+        new_conn.host =  "postgres-dwh"
         new_conn.port = "5432"
-        new_conn.schema = "dwh"
         new_conn.login = "airflow"
         new_conn.set_password("airflow")
 
@@ -65,11 +59,18 @@ def initialize_dwh_conn():
 
 dag = airflow.DAG(
     'init_dwh_conn',
-    description='Creates the connection to the warehouse database',
     schedule_interval="@once",
-    default_args=args
-    )
+    default_args=args,
+    max_active_runs=1)
 
 t1 = PythonOperator(task_id='initialize_dwh_conn',
                     python_callable=initialize_dwh_conn,
                     dag=dag)
+
+t2 = PostgresOperator(task_id='build-tables',
+                        postgres_conn_id = 'postgres_dwh',
+                        autocommit = True,
+                        sql = 'sql/dwh_tables.sql',
+                        dag = dag)
+
+t1 >> t2
