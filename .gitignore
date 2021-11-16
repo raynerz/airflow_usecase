@@ -1,4 +1,4 @@
 # Airflow
 
-airflow/logs/
-airflow/dags/__pycache__/
+logs/
+/dags/__pycache__/
