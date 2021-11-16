@@ -9,6 +9,7 @@ from io import StringIO
 
 import subprocess
 import sys
+import os
 
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
@@ -19,7 +20,7 @@ import psycopg2
 
 # Data Requirements
 
-API_KEY = "K6Awjzc5QhYfmab0JQf58erPbnHEbHFE"
+API_KEY = os.environ['TOM_TOM_API_KEY']
 
 bern_lon = 7.434711
 bern_lat = 46.945322
@@ -44,24 +45,27 @@ def collect_data(**op_kwargs):
     traffic_list = []
 
     for city in cities:
-      response = requests.get('https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?key=' + API_KEY + '&point=' + str(city[1]) + ',' + str(city[0]))
-      traffic = json.loads(response.text)
+        response = \
+            requests.get('https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?key='
+                          + API_KEY + '&point=' + str(city[1]) + ','
+                         + str(city[0]))
+        traffic = json.loads(response.text)
+        export = {
+            'city': city[2],
+            'canton': city[3],
+            'latitude': city[1],
+            'longitude': city[0],
+            'currentSpeed': traffic['flowSegmentData']['currentSpeed'],
+            'currentTravelTime': traffic['flowSegmentData'
+                    ]['currentTravelTime'],
+            'freeFlowSpeed': traffic['flowSegmentData']['freeFlowSpeed'
+                    ],
+            'freeFlowTravelTime': traffic['flowSegmentData'
+                    ]['freeFlowSpeed'],
+            }
+        traffic_list.append(export)
+    return traffic_list
 
-      export = {
-        'city' : city[2],
-        'canton': city[3],
-        'latitude' : city[1],
-        'longitude' : city[0],
-        'currentSpeed': traffic['flowSegmentData']['currentSpeed'],
-        'currentTravelTime' : traffic['flowSegmentData']['currentTravelTime'],
-        'freeFlowSpeed' : traffic['flowSegmentData']['freeFlowSpeed'],
-        'freeFlowTravelTime' : traffic['flowSegmentData']['freeFlowSpeed']
-      }
-
-
-      traffic_list.append(export)
-
-      return traffic_list
 
 def ingest_to_dwh(ti):
 
@@ -110,7 +114,7 @@ def ingest_to_dwh(ti):
 
 dag = airflow.DAG(
     'traffic_ingestion',
-    schedule_interval="*/10 * * * *", #Every 10th minute = */10 * * * *
+    schedule_interval="*/5 * * * *", #Every 5 minutes
     dagrun_timeout=timedelta(minutes=60),
     default_args=args,
     max_active_runs=1)

@@ -47,7 +47,7 @@ args = {
     'provide_context': True
 }
 
-##### Main Python ETL Tasks
+##### Main Python Data Pipeline Tasks
 
 #Create requests to the different sites in the OpenZH github repository in order to collect the covid information
 def collect_data(**op_kwargs):
@@ -63,7 +63,7 @@ def collect_data(**op_kwargs):
 
     data['BE'] = {"cases": cases_BE.text, "tests": tests_BE.text}
     #data['ZH'] = (cases_ZH.text, tests_ZH.text)
-    #data['VD'] = (cases_VD.text, cases_VD.text)
+    #data['VD'] = (cases_VD.text, tests_VD.text)
 
 
 
