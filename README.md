@@ -14,7 +14,7 @@ This project is part of a job application, it's a dummy data warehouse connected
 
 ## How to run this project
 
-0. sql/src/TrafficHelper.py uses TomTom API for fetching real time traffic stats. Therefore you need to get an API key from (TomTom developer website)[https://developer.tomtom.com/] and put the following within an .env file situated at the root of the project.
+0. sql/src/TrafficHelper.py uses TomTom API for fetching real time traffic stats. Therefore you need to get an API key from [TomTom developer website](https://developer.tomtom.com/) and put the following within an .env file situated at the root of the project
 
 ```
 AIRFLOW_UID=1000
