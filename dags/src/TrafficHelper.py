@@ -1,7 +1,3 @@
-import airflow
-from datetime import datetime, timedelta
-from airflow.operators.python_operator import PythonOperator
-from airflow.operators.postgres_operator import PostgresOperator
 import pandas as pd
 import requests
 import json
@@ -10,12 +6,6 @@ from io import StringIO
 import subprocess
 import sys
 import os
-
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-install("psycopg2")
-
 import psycopg2
 
 # Data Requirements
@@ -33,11 +23,6 @@ zh_lat = 47.377110
 
 cities = [(bern_lon, bern_lat, "Bern", "BE"), (lausanne_lon, lausanne_lat, "Lausanne", "VD"), (zh_lon, zh_lat, "Zurich", "ZH")]
 
-args = {
-    'owner': 'airflow',
-    'start_date': airflow.utils.dates.days_ago(7),
-    'provide_context': True
-}
 
 #### Main Python ETL Tasks
 
@@ -107,25 +92,3 @@ def ingest_to_dwh(ti):
 
     conn.commit()
     conn.close()
-
-
-
-#### Building dag
-
-dag = airflow.DAG(
-    'traffic_ingestion',
-    schedule_interval="*/5 * * * *", #Every 5 minutes
-    dagrun_timeout=timedelta(minutes=60),
-    default_args=args,
-    max_active_runs=1)
-
-t1 = PythonOperator(task_id='collect_data',
-                    python_callable=collect_data,
-                    provide_context=True,
-                    dag=dag)
-
-t2 = PythonOperator(task_id='ingest_to_dwh',
-                    python_callable=ingest_to_dwh,
-                    provide_context=True,
-                    dag=dag)
-t1 >> t2
