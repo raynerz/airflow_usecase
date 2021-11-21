@@ -1,6 +1,6 @@
 # Covid 19 DWH - Job Application
 
-This project is part of a job application, it's a dummy data warehouse connected do different automation and data analysis services. The project contain the following modules:
+This project is part of a job application, it's a dummy data warehouse connected to an automation and data analysis services. It contains the following modules:
 
 - Airflow - ETL and Task automation
 - Metabase - Data Analysis
@@ -13,6 +13,13 @@ This project is part of a job application, it's a dummy data warehouse connected
 - docker-compose v1.29+
 
 ## How to run this project
+
+0. sql/src/TrafficHelper.py uses TomTom API for fetching real time traffic stats. Therefore you need to get an API key from (TomTom developer website)[https://developer.tomtom.com/] and put the following within an .env file situated at the root of the project.
+
+```
+AIRFLOW_UID=1000
+TOM_TOM_API_KEY = your_api_key_here
+```
 
 1. If this is the first time starting Airflow
 
@@ -36,15 +43,6 @@ $ ./run_second.sh
 
 ## Remove the containers and volumes
 
-
-B
-B
-A
-A
-A
-
-
-A
 ```
 $ ./clean.sh
 ````
